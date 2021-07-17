@@ -1,23 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd;">
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>com.andy.demo</artifactId>
-    <groupId>spring-cloud-config-example</groupId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>Spring Cloud Config Example</name>
-    <packaging>pom</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-parent</artifactId>
-        <version>2.3.9.RELEASE</version>
+        <version>2.5.1</version>
     </parent>
 
-    
+    <groupId>com.andy.demo</groupId>
+    <artifactId>spring-cloud-config-example</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Spring Cloud Config Example</name>
+    <packaging>pom</packaging>
+
+
+    <properties>
+        <spring-boot.vers>2.5.2</spring-boot.vers>
+        <java.version>1.8</java.version>
+        <junit-jupiter.vers>5.5.2</junit-jupiter.vers>
+        <spring-cloud.vers>2020.0.3</spring-cloud.vers>
+    </properties>
+
+    <modules>
+        <module>spring-cloud-server</module>
+    </modules>
+
     <dependencyManagement>
         <dependencies>
-
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.vers}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${spring-boot.vers}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.vers}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit-jupiter.vers}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
