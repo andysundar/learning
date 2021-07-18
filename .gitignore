@@ -26,3 +26,17 @@ hs_err_pid*
 ######################
 .DS_Store
 .DS_Store?
+
+######################
+# Generated files #
+######################
+# Spring Initializer Generated Maven Files #
+.mvn/
+mvnw
+mvnw.cmd
+
+.gitignore
+.classpath
+.project
+.settings/
+target/
