@@ -1,13 +1,16 @@
 package com.andy.learning.jdk20;
 
 
+import java.lang.Thread.Builder.OfVirtual;
 import java.util.concurrent.Executors;
 
 public class VirtualThreadCharacteristicsExample {
 
-    public static void main(String[] args) throws InterruptedException {
-        var virtualThread1 = Thread
-                .ofVirtual()
+    @SuppressWarnings("preview")
+	public static void main(String[] args) throws InterruptedException {
+        OfVirtual ofVirtual = Thread
+                .ofVirtual();
+		var virtualThread1 = ofVirtual
                 .unstarted(()-> System.err.println(Thread.currentThread()));
         virtualThread1.start();
 
