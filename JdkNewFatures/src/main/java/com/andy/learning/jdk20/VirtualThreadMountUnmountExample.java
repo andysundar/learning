@@ -3,7 +3,7 @@ package com.andy.learning.jdk20;
 import java.time.Duration;
 import java.util.stream.IntStream;
 
-public class VirtualThreadContinuationExample {
+public class VirtualThreadMountUnmountExample {
 
 
     public static void main(String[] args)  {

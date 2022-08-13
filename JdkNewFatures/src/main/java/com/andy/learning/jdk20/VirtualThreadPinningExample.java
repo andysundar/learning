@@ -5,12 +5,12 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.IntStream;
 
-public class VirtualThreadCapturingExample {
+public class VirtualThreadPinningExample {
 
     private final Lock lock = new ReentrantLock();
 
     public static void main(String[] args) {
-        VirtualThreadCapturingExample obj = new VirtualThreadCapturingExample();
+        VirtualThreadPinningExample obj = new VirtualThreadPinningExample();
         var virtualThreads = IntStream.range(0, 10).mapToObj(
                 (counter) -> Thread.ofVirtual().unstarted(
                         () -> {

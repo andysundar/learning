@@ -3,7 +3,7 @@ package com.andy.learning.jdk20;
 import jdk.internal.vm.ContinuationScope;
 import jdk.internal.vm.Continuation;
 
-public class ContinuationScopeExample {
+public class CoRoutineExample {
 
     public static void main(String[] args) {
         var scope = new ContinuationScope("Andy");
