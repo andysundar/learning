@@ -1,4 +1,4 @@
-# default modifer in the interface
+# _default_ modifer in the interface
 ## Interface
 
 An interface is an abstract type which is used to describe the behaviour of the class which implement it. In other words an interface will tell us what are the method(s) defined by the implementing class. 
