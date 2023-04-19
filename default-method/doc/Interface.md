@@ -110,12 +110,12 @@ We deployed the ***first version / v.1*** of our basic banking software to XYZ B
 Now aftersome time another bank named ABC Bank came to us and showed interest to implement our basic banking software and they required one more feature to our existing basic banking software. 
 The new feature is issuing and closing a debit card agaist an account. Now you can see we need to add two methods in _BankerAccountService_ interface because it will be determined by the bank who gets the debit card but now the problem is XYZ Bank does not require this debit card feature. XYZ Bank is very happy with existing software and they are not ready to take any new version. 
 
-#### Before default modifer 
+#### Before _default_ modifer 
 If we add debit card feature to our existing _BankerAccountService_ interface then we also need to upgrade XYZ Bank to the latest software also, because implementor of _BankerAccountService_ interface need to implement the debit card feature otherwise it is going to break our existing client. 
 
 So the best way to mitigate this challenge is to create another interface for the ABC Bank and implement their specific requirement. In coming days this approach will work but it will have lots of challenges like maintaining multipe versions which will increase the supporting cost and it will be error prone. 
 This approach will work and we have to be ready to bear the support cost for this approach. 
 Please take a note here that we are doing a very small change in this example. Just think of it in real term changes. It will be very challelging to implement new features to the exsiting software. 
 
-#### After default modifer 
+#### After _default_ modifer 
 To ease our developer's life in JDK 8 *default* modifer was introduced. *default* modifier helps us to implement default impletation in the interface so that it does not break the existing implementation. 
