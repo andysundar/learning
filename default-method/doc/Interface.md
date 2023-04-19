@@ -88,7 +88,7 @@ public static <T extends Comparable<? super T>> Comparator<T> reverseOrder() {
  ```   
 
 ## Default method
-*default* modifer was introduced from JDK 7. It was really difficult to introduce a new method in an existing interface without breaking the exisitng implementations. More the implementations we have more problem it will be.  Lets take an example to understand it better. 
+*default* modifer was introduced from JDK 8. It was really difficult to introduce a new method in an existing interface without breaking the exisitng implementations. More the implementations we have more problem it will be.  Lets take an example to understand it better. 
 
 We are approached by a bank to provide a basic banking solution to XYZ Bank. They are a very small bank and they need only the basic banking operations like opening & closing an account, credit & debit the account balance, and interest calculations.  
 
