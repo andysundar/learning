@@ -10,14 +10,14 @@ An interface can also be defined inside a class or in an another interface.An in
 
 All the fields defined in an interface is implicitly *public final static*. As a result, field value once assigned cannot be changed later. 
  
-`
+```
 interface CustomerOperation {
     int STATUS = 1; 
     /*  It internally means. 
      *  public final static int STATUS = 1; 
      */
 }
-`
+```
 ### Method defined in Interface
 
 If *public* access specifier is used for a method then it should not have a method body.  This method should be *abstract* in nature and by default it will be *abstract* in nature. 
