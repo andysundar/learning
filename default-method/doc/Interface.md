@@ -41,10 +41,8 @@ There is a change in methods declaration from JDK 9.
 ```
 interface Outer {
     /*  
-    *   If you don't specify the access specifier  
-    *   in the interface it is always public.
-    *   In this example classSimpleName() and method() 
-    *   are public implicitly. 
+    *   If you don't specify the access specifier in the interface it is always public.
+    *   In this example classSimpleName() and method() are public implicitly. 
     */
 
     static String classSimpleName() {
